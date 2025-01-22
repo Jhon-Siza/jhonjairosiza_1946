@@ -1,0 +1,6 @@
+algoritmo saludo
+    definir nombre como texto
+    nombre = "mundo"
+    escribir "Hola ", nombre
+    escribir "she doesn´t love"
+fin algoritmo

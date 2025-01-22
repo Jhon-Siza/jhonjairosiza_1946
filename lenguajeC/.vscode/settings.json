@@ -1,0 +1,7 @@
+{
+    "C_Cpp.default.compilerPath": "c:\\Program Files\\CodeBlocks\\MinGW\\bin\\c++.exe",
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
+}
