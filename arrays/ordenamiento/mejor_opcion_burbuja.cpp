@@ -99,6 +99,4 @@ int main(){
     mejorOpcionBurbuja(vec, ne);
     cout << "\nVector ordenado: " << endl;
     muestraVector(vec, ne);
-
-    return 0;
 }
