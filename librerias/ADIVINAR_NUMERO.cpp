@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-#include "arrays2.h"
+#include "arrays.h"
 using namespace std;
 using namespace vectorn;
 
