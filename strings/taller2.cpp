@@ -18,12 +18,23 @@ main()
     auxiliar = cadena1.c_str();
     cout<<"auxiliar array char: "<<auxiliar<<endl;
     //metodo empty para conocer si una cadena esta vacia o no
-    (cadena4.empty())?cout<<"Cadena vacia":cout<<"cadena no vacia\n";
+    (cadena4.empty())?cout<<"Cadena vacia\n":cout<<"cadena no vacia\n";
     //tamaño maximo de caracteres que puede almacenar la cadena
     cout << "Tamano maximo: " << cadena1.max_size() << endl;
     //tamaño en bytes del objeto string que ocupa actualemnte
-    cout << "Capacidad: " << cadena1.capacity()<<endl;
-
-
-
+    cout << "Capacidad: " << cadena1.capacity() <<endl;
+    //usando el metodo compare para comparar dos cadenas
+    cout<<"cad1="<<cadena1<<" cad2="<<cadena2<<endl;
+    cadena1 = "mola";
+    cadena2 = "cola";  
+    int comparacion = cadena1.compare(cadena2);
+    cout<<"comparacion: "<<comparacion<<endl;
+    int encontrado = cadena1.find("cos");
+    cout<<"encontrado: " << encontrado<<endl;
+    (cadena1.find("cos")== string::npos)?cout<<"No encontrado":cout<<"encontrado"; //string libreria, :: operador de acceso a la libreria, npos variable contenida en la libreria (-1,0,1)
+    string numerostr = "123";
+    int numero = stoi(numerostr);
+    cout<<endl;
+    cout <<numero<<endl;
+    cin>>numero;
 }
