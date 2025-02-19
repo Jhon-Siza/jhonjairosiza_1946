@@ -1,50 +1,72 @@
 #include <iostream>
 using namespace std;
 
-struct persona{
-    string nombre="Sin nombre";
-    int edad=0;
-    float estatura=0.0; //campos del registro persona, todo esto
+// Estructura para Registro de Automóviles
+struct Automovil {
+    string codigoA;
+    string marca;
+    string modelo;
+    int anyo;
+    string placa;
+};
 
-}; //nomnres de variables
-struct{
+// Estructura para Cliente de Videoclub
+struct ClienteVideoclub {
     string nombre;
-    float nota;
-}e1,e2;
-void registro(){
-    persona p5,p6;
-}
-main()
-{
-    //typedef persona personas;    //sirve como poner otro nombre a la "variable" persona = personas ; o int = entero
-    //typedef int entero;
+    string direccion;
+    string telefono;
+    float adeuda;
+    string codigoCl;
+};
 
-    persona persona3, persona4;
-    persona3.nombre="Carlos Ortiz";
-    persona3.edad = 28;
-    persona3.estatura = 1.90;
-    cout << "Nombre= "<<persona3.nombre<<endl;
-    cout << "Edad= "<<persona3.edad<<endl;
-    cout << "Estatura= "<<persona3.estatura<<endl;
-    cout << "Datos persona2:"<<endl;
-    cout << "Nombre: ";
-    getline(cin,persona4.nombre);
-    cout << "Edad: ";
-    cin >> persona4.edad;
-    cout << "Estatura: ";
-    cin >> persona4.estatura;
-    cout << "Datos ingresados: "<<endl;
-    cout << "Nombre= "<<persona3.nombre<<"\t";
-    cout << "Edad= "<<persona3.edad<<"\t";
-    cout << "Estatura= "<<persona3.estatura<<"\n";
-    cout << "Nombre= "<<persona4.nombre<<"\t";
-    cout << "Edad= "<<persona4.edad<<"\t";
-    cout << "Estatura= "<<persona4.estatura<<endl;
-    cout << "Datos del estudiante No 1"<<endl;
-    cout << "Nombre: ";
-    cin.ignore();
-    getline(cin,e1.nombre);
-    cout<<"Nota: ";
-    cin >> e1.nota;
+// Estructura para Licencia de Manejo
+struct LicenciaManejo {
+    string nombres;
+    string apellidoPaterno;
+    string apellidoMaterno;
+    string fechaDesde;
+    string fechaVencimiento;
+    string nacionalidad;
+    string grupoSanguineo;
+    string tipoLicencia;
+    string restricciones;
+    bool donaOrganos;
+    string direccion;
+    string cedula;
+};
 
+// Estructura para Tarjeta de Crédito
+struct TarjetaCredito {
+    string nombre;
+    string fechaVencimiento;
+    string numeroTarjeta;
+    float saldo;
+    float limite;
+};
+
+int main() {
+    // Inicialización de datos
+    Automovil auto1 = {"123XYZ", "Toyota", "Corolla", 2022, "ABC-123"};
+    ClienteVideoclub cliente1 = {"Juan Perez", "Calle Falsa 123", "555-1234", 50.75, "CL001"};
+    LicenciaManejo licencia1 = {"Maria Lopez", "Gomez", "Hernandez", "01-01-2020", "01-01-2030", "Mexicana", "O+", "A", "Ninguna", true, "Avenida Siempre Viva", "987654321"};
+    TarjetaCredito tarjeta1 = {"Pedro Ramirez", "12/26", "4111 1111 1111 1111", 5000.00, 10000.00};
+    
+    // Mostrar datos de ejemplo
+    cout << "Datos del automóvil:" << endl;
+    cout << "Código: " << auto1.codigoA << " | Marca: " << auto1.marca << " | Modelo: " << auto1.modelo << " | Año: " << auto1.anyo << " | Placa: " << auto1.placa << endl;
+    
+    cout << "\nDatos del cliente de videoclub:" << endl;
+    cout << "Nombre: " << cliente1.nombre << " | Dirección: " << cliente1.direccion << " | Teléfono: " << cliente1.telefono << " | Adeuda: " << cliente1.adeuda << " | Código: " << cliente1.codigoCl << endl;
+    
+    cout << "\nDatos de la licencia de manejo:" << endl;
+    cout << "Nombre: " << licencia1.nombres << " " << licencia1.apellidoPaterno << " " << licencia1.apellidoMaterno << endl;
+    cout << "Fecha de emisión: " << licencia1.fechaDesde << " | Vence: " << licencia1.fechaVencimiento << endl;
+    cout << "Grupo sanguíneo: " << licencia1.grupoSanguineo << " | Tipo: " << licencia1.tipoLicencia << " | Dona órganos: " << (licencia1.donaOrganos ? "Sí" : "No") << endl;
+    
+    cout << "\nDatos de la tarjeta de crédito:" << endl;
+    cout << "Titular: " << tarjeta1.nombre << " | Número: " << tarjeta1.numeroTarjeta << " | Saldo: " << tarjeta1.saldo << " | Límite: " << tarjeta1.limite << endl;
+    
+    return 0;
 }
+
+//aqui debemos hacer la activiidad, esto es lo q me dio la IA, luego corregir

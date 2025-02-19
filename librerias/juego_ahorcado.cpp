@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-#include ".../librerias/ahorcado.h"
+#include "../Librerias/ahorcado.h"
 
 using namespace std;
 
@@ -57,19 +57,19 @@ void jugarAhorcado(string palabra) {
         
         if (!encontrada) {
             intentos--;
-            cout << "Letra incorrecta!" << endl;
+            cout << "Letra incorrecta" << endl;
         }
     }
     
     mostrarAhorcado(intentos);
     if (oculta == palabra) {
-        cout << "\nFelicidades! Has adivinado la palabra: " << palabra << endl;
+        cout << "\nFelicidades, Has adivinado la palabra: " << palabra << endl;
     } else {
-        cout << "\nHas perdido! La palabra era: " << palabra << endl;
+        cout << "\nPerdiste, La palabra era: " << palabra << endl;
     }
 }
 
-int main() {
+main() {
     string palabras[5], palabraSeleccionada;
     int op;
     cout << "Juego del Ahorcado" << endl;
@@ -85,4 +85,4 @@ int main() {
     
     return 0;
 }
-
+//en la libreria esta lo que es "paises", pero en mi codigo no lo inclui ya que era opcional, por eso solo tiene 3 categorias
