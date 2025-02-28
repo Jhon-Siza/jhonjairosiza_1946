@@ -59,7 +59,7 @@ main()
         cout<<x<<" ";
     }
     datos.pop_back();
-    cout<<"\nNuevos elementos de datos despues de llamar a la funcion "<<endl;
+    cout<<"\nNuevos elementos de datos despues de llamar a la funcion  "<<endl;
     for(auto x:datos){
         cout<<x<<" ";
     }
