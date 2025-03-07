@@ -1,0 +1,7 @@
+id	producto	cant	precio	sucursal
+1	Laptop		5	1200.00	Norte
+2	Mouse		15	25.00	Centro
+3	Teclado		8	45.00	Sur
+4	Monitor		3	250.00	Este
+5	Laptop		2	1200.00	Centro
+6	Impresora	4	180.00	Norte
